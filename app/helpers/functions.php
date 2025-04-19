@@ -93,6 +93,11 @@ function redirect($redirect)
     header("location:" . URLROOT . "/" . $redirect);
 }
 
+function urlPath($path)
+{
+    return URLROOT . "/" . $path;
+}
+
 function publicPath($path)
 {
     echo "./" . $path;
